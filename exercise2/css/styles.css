@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: heroesassembleital;
+  src: url(../heroesassembleital.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: heroesassembleital;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.container {
+  width: 100vw;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 60px auto auto auto;
+  grid-template-columns: 0 1fr;
+  grid-template-areas: "uno uno" "tres tres" "dos dos" "cuatro cuatro";
+}
+
+header {
+  grid-area: uno;
+}
+
+nav {
+  grid-area: dos;
+  margin: 20px auto;
+}
+
+main {
+  grid-area: tres;
+}
+
+footer {
+  grid-area: cuatro;
+}
+
+.tittle {
+  text-align: center;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  padding: 3%;
+  background-color: #000;
+  width: 100%;
+  height: 40px;
+  box-shadow: 2px 3px 32px -4px rgba(69, 58, 164, 0.75);
+}
+
+.header-tittle {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.header-logo {
+  width: 29px;
+  height: 34px;
+}
+
+.btn-menu {
+  padding: 2%;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+
+.cont-menu {
+  width: 100%;
+}
+.cont-menu .menu {
+  background-color: black;
+  float: right;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  right: 0;
+}
+.cont-menu .menu .menu-item {
+  width: 100%;
+  padding: 40% 30%;
+  float: left;
+  color: white;
+  font-size: 20px;
+}
+
+.menu-hidden {
+  right: -50% !important;
+}
+
+.post {
+  max-width: 94%;
+  margin: 0 auto;
+  box-shadow: -1px 0px 10px 1px #7B6FDE;
+  border-radius: 10px;
+}
+
+.post-header {
+  background-color: #453AA4;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+
+.post-header__avatar {
+  height: 33px;
+  padding-right: 10px;
+}
+
+.post-header__link {
+  padding: 0 20px;
+}
+
+.post__tittle {
+  margin: 3%;
+}
+
+.post__text {
+  margin: 3%;
+  font-family: "Roboto", sans-serif;
+}
+
+.post__img {
+  width: 94%;
+  display: block;
+  margin: 0 auto;
+}
+
+.post__date {
+  font-family: "Roboto", sans-serif;
+  color: #ADADAD;
+  font-size: 10px;
+  margin: 3%;
+}
+
+.related {
+  box-sizing: border-box;
+  background-color: #453AA4;
+  border-radius: 10px;
+  margin: 4%;
+  margin-right: 0;
+  width: 44%;
+  float: left;
+  padding: 2%;
+}
+.related img {
+  width: 100%;
+  height: 75px;
+}
+
+.related__leer-mas {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  display: block;
+  margin: 5% auto;
+}
+
+.related__tittle {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  padding: 5% 0;
+}
+
+.related__date {
+  font-family: "Roboto", sans-serif;
+  color: #ADADAD;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.footer {
+  box-shadow: 2px 3px 32px -4px rgba(69, 58, 164, 0.75);
+}
+.footer .menu {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.footer .menu .menu-item {
+  padding: 5%;
+}
+
+.copy {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 2% auto;
+}
+
+.posts {
+  margin-top: 20%;
+}
+.posts .cont-related h2 {
+  padding: 5% 0 0 2%;
+}
+
+/*# sourceMappingURL=styles.css.map */

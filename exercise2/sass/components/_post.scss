@@ -1,0 +1,45 @@
+.post {
+  max-width: 94%;
+  margin: 0 auto;
+  box-shadow: -1px 0px 10px 1px #7B6FDE;
+  border-radius: 10px;
+}
+
+.post-header {
+  background-color: $secundary-color;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+
+.post-header__avatar {
+  height: 33px;
+  padding-right:10px;
+}
+
+.post-header__link {
+  padding: 0 20px;
+}
+
+.post__tittle {
+  margin: 3%;
+}
+
+.post__text {
+  margin: 3%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.post__img {
+  width: 94%;
+  display: block;
+  margin: 0 auto;
+}
+
+.post__date {
+  font-family: 'Roboto', sans-serif;
+  color: #ADADAD;
+  font-size: 10px;
+  margin: 3%;
+}

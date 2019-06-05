@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  padding: 3%;
+  background-color: #000;
+  width: 100%;
+  height: 40px;
+  box-shadow: 2px 3px 32px -4px rgba(69,58,164,0.75); 
+}
+
+.header-tittle {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.header-logo {
+  width: 29px;
+  height: 34px;
+}

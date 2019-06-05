@@ -1,0 +1,32 @@
+.btn-menu {
+  padding: 2%;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+
+.cont-menu{
+  width: 100%;
+  .menu {
+    background-color: black;
+    float: right;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    right: 0;
+    .menu-item {
+      width: 100%;
+      padding: 40% 30%;
+      float: left;
+      color: white;
+      font-size: 20px;
+    }
+  } 
+} 
+
+.menu-hidden {
+  right: -50% !important;
+}
+

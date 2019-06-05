@@ -1,0 +1,18 @@
+.footer{
+  box-shadow: 2px 3px 32px -4px rgba(69,58,164,0.75); 
+  .menu {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    .menu-item {
+      padding: 5%;
+    }
+  }
+}
+
+.copy {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 2% auto;
+}
