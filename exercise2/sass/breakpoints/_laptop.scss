@@ -1,2 +1,62 @@
-@media (max-width: $breakpoint-lg){
+@media (min-width: $breakpoint-lg){
+  .container {
+    width: 100vw; 
+  }
+  
+  .container { 
+    display: grid;
+    grid-template-rows: 100px auto auto auto !important;
+    grid-template-columns: 2fr 1fr !important;
+    grid-template-areas: "uno uno"
+                         "tres dos"
+                         "tres dos"
+                         "cuatro cuatro" !important;
+  }
+  
+  header {
+    grid-area: uno;
+  }
+  
+  nav {
+    grid-area: dos;
+    box-shadow: 2px 3px 32px -4px rgba(69,58,164,0.75);   
+    margin: 0 auto !important;
+    .related {
+      width: 85%;
+    }
+  }
+  
+  main {
+    grid-area: tres;
+  }
+  
+  footer {
+    grid-area: cuatro;
+  }
+
+  .tittle {
+      text-align: center;
+      padding: 70px;
+      padding-bottom: 10px;
+  }
+
+  .related img {
+    height: auto;
+  }
+  
+  .cont-menu{
+    display: none;
+  } 
+
+  .menu-desktop {
+    display: block;
+  }
+
+  .menu-hidden {
+    right: 0 !important;
+  }
+
+  .footer .menu-item {
+    font-size: 25px;
+  }
 }

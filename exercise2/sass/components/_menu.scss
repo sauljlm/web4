@@ -26,6 +26,17 @@
   } 
 } 
 
+.menu-desktop {
+  position: absolute;
+  right: 0;
+  display: none;
+  .menu-item {
+    display: inline-block;
+    padding: 0 50px;
+    font-size: 25px;
+  }
+}
+
 .menu-hidden {
   right: -50% !important;
 }
