@@ -1,48 +1,38 @@
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 @font-face {
   font-family: heroesassembleital;
-  src: url(../SQUEALER.ttf);
-}
+  src: url(../SQUEALER.ttf); }
 a {
   text-decoration: none;
-  color: #fff;
-}
-a:hover {
-  text-decoration: underline;
-}
+  color: #fff; }
+  a:hover {
+    text-decoration: underline; }
 
 body {
   background-color: #000;
   box-sizing: border-box;
   color: #fff;
-  font-family: "Fjalla One", sans-serif;
-}
+  font-family: 'Fjalla One', sans-serif; }
 
 h3 {
-  font-family: SQUEALER;
-}
+  font-family: SQUEALER; }
 
 img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 .clearfix:after {
   display: block;
   content: "";
-  clear: both;
-}
+  clear: both; }
 
 .container {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 .steam {
   position: absolute;
@@ -52,8 +42,7 @@ ul {
   height: 50px;
   background: url("../img/steam.png");
   background-size: cover;
-  opacity: 0;
-}
+  opacity: 0; }
 
 .hero-banner {
   width: 100%;
@@ -63,112 +52,93 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .concert {
   width: 100%;
   max-width: 100%;
   height: 346px;
   position: absolute;
-  top: 0;
-}
+  top: 0; }
 
 .poster {
   width: 100%;
-  max-width: 1440px;
   background-image: url("../img/acdc_wallpaper.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
-}
-.poster p {
-  padding: 15px 0;
-}
+  background-position: top center; }
+  .poster p {
+    padding: 15px 0; }
 
 .poster-cont {
   max-width: 80%;
   margin: 0 auto;
-  padding: 30px 0;
-}
+  padding: 30px 0; }
 
 .info {
-  padding-bottom: 50px;
-}
+  padding-bottom: 50px; }
 
 .poster__nombre {
   background-image: url("../img/logo.png");
   width: 200px;
   height: 75px;
   background-size: contain;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 .productora__sitio-web {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-}
+  padding: 10px; }
 
 .productora__title {
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 .logo-parque {
   width: 150px;
   padding-top: 50px;
   display: block;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .draw-border {
   box-shadow: inset 0 0 0 4px #fff;
   color: #fff;
   transition: color 0.25s 0.08333s;
   position: relative;
-  width: 60%;
-}
+  width: 60%; }
 
 .draw-border::before, .draw-border::after {
   border: 0 solid transparent;
   box-sizing: border-box;
-  content: "";
+  content: '';
   pointer-events: none;
   position: absolute;
   width: 0;
   height: 0;
   bottom: 0;
-  right: 0;
-}
+  right: 0; }
 
 .draw-border::before {
   border-bottom-width: 4px;
-  border-left-width: 4px;
-}
+  border-left-width: 4px; }
 
 .draw-border::after {
   border-top-width: 4px;
-  border-right-width: 4px;
-}
+  border-right-width: 4px; }
 
 .draw-border:hover {
-  color: #e6001a;
-}
+  color: #e6001a; }
 
 .draw-border:hover::before, .draw-border:hover::after {
   border-color: #e6001a;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .draw-border:hover::before {
-  transition-delay: 0s, 0s, 0.25s;
-}
+  transition-delay: 0s, 0s, 0.25s; }
 
 .draw-border:hover::after {
-  transition-delay: 0s, 0.25s, 0s;
-}
+  transition-delay: 0s, 0.25s, 0s; }
 
 .draw-border {
   background: none;
@@ -176,34 +146,31 @@ ul {
   cursor: pointer;
   line-height: 1.5;
   padding: 10px;
-  letter-spacing: 0.05rem;
-}
+  letter-spacing: 0.05rem; }
 
 .draw-border:focus {
-  outline: none;
-}
+  outline: none; }
 
 @media (min-width: 768px) {
   .poster {
     position: absolute;
-  }
+    display: flex;
+    justify-content: center; }
 
   .poster-cont {
     max-width: 60%;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
-  }
+    justify-content: space-between; }
 
   .logo-parque {
-    float: right;
-  }
+    float: right; }
 
   .hero-banner {
     width: 100%;
     height: 45vh;
     background-image: url("../img/map-cetav3.png");
-    background-size: cover;
-  }
+    background-size: cover; }
 
   .concert {
     width: 100%;
@@ -213,18 +180,15 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
-    background-position: top center;
-  }
-}
+    background-position: top center; } }
 @media (min-width: 1024px) {
   .poster-cont {
     max-width: 50%;
-  }
+    width: 40%; }
 
   .hero-banner {
     max-width: 2440px;
-    height: 45vh;
-  }
+    height: 45vh; }
 
   .concert {
     width: 100%;
@@ -232,8 +196,6 @@ ul {
     height: 45vh;
     background-size: contain;
     top: 0;
-    background-position: top center;
-  }
-}
+    background-position: top center; } }
 
 /*# sourceMappingURL=styles.css.map */

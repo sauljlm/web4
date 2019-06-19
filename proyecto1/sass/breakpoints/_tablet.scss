@@ -1,9 +1,13 @@
 @media (min-width: $breakpoint-md){
   .poster {
     position: absolute;
+    display: flex;
+    justify-content: center;
+
   }
   .poster-cont {
     max-width: 60%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
   }
