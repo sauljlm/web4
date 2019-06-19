@@ -1,0 +1,56 @@
+.site-header {
+  max-width: 100%;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:"logo logo"
+                      "idioma idioma"
+                      "search search"
+                      "nav nav";
+  justify-items: center;  
+}
+
+.site-header__logo {
+  grid-area: logo;
+
+}
+
+.site-header__content {
+
+}
+
+
+.site-header__top-links {
+  grid-area: idioma;
+  align-self: center;
+}
+
+.site-header__search {
+  grid-area: search;
+}
+
+.site-header__main-nav {
+  grid-area: nav;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  ul {
+
+    padding-bottom: 40px;
+  }
+  li {
+    padding: 10px 0;
+    transition: 0.5s;
+  }
+  li:hover {
+    padding-bottom: 8px;
+    transition: 0.5s;
+    border-bottom: 2px solid black;
+  }
+  .active {
+    padding-bottom: 5px;
+    transition: 0.5s;
+    border-bottom: 2px solid black;
+  }
+}

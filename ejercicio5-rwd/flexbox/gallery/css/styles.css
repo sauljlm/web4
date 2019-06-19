@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+body {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+ul {
+  list-style: none; }
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  .gallery img {
+    width: 100%; }
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #fff;
+  color: #fff;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+  width: 60%; }
+
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0; }
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px; }
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px; }
+
+.draw-border:hover {
+  color: #e6001a; }
+
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #e6001a;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%; }
+
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s; }
+
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s; }
+
+.draw-border {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 10px;
+  letter-spacing: 0.05rem; }
+
+.draw-border:focus {
+  outline: none; }
+
+@media (min-width: 768px) {
+  .gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .gallery img {
+      width: 50%; } }
+@media (min-width: 1024px) {
+  .gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .gallery img {
+      flex-grow: 1;
+      width: 33%; } }
+
+/*# sourceMappingURL=styles.css.map */

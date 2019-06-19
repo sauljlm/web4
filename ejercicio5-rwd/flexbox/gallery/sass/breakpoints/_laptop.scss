@@ -1,0 +1,11 @@
+@media (min-width: $breakpoint-lg){
+  .gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      flex-grow: 1;
+      width: 33%;
+    }
+  }
+}    

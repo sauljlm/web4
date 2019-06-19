@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 100%;
+} 
+
+ul{
+    list-style: none;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
