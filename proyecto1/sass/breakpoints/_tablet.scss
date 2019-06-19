@@ -1,0 +1,32 @@
+@media (min-width: $breakpoint-md){
+  .poster {
+    position: absolute;
+  }
+  .poster-cont {
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-parque {
+    float: right;
+  }
+
+  .hero-banner {
+    width: 100%; 
+    height: 45vh;
+    background-image: url('../img/map-cetav3.png');
+    background-size: cover;
+  }
+  
+  .concert {
+    width: 100%;
+    max-width: 100%;
+    height: 45vh;
+    background-image: url('../img/1png.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    background-position: top center;
+  }
+}    
