@@ -5,6 +5,7 @@
   position: absolute;
   right: 1%;
   top: 1%;
+  z-index: 1;
 }
 
 .cont-menu{
@@ -12,12 +13,13 @@
   width: 100%;
   .menu {
     background-color: black;
-    margin: 17% auto; 
+    margin: 12% auto; 
     float: right;
     width: 50%;
     height: 100vh;
     position: relative;
     right: 0;
+    transition: 1s;
     .menu-item {
       width: 100%;
       padding: 40% 30%;
@@ -29,6 +31,7 @@
 } 
 
 .menu-hidden {
-  right: -200px !important;
+  right: -100% !important;
+  transition: 1s;
 }
 

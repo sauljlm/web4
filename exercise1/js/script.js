@@ -10,6 +10,7 @@
 
   function init() {
     createMenu();
+    menu.classList.toggle('menu-hidden');
   }
 
   window.addEventListener("load", function(event) {
