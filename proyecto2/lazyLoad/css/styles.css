@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.gallery {
+  margin: 5px;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+  width: 600px;
+  display: block;
+  margin: 10px auto;
+  border: 0;
+  transform: translateX(0);
+  opacity: 1.0;
+  transition: all 500ms;
+}
+
+.lazy {
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 500ms;
+}
